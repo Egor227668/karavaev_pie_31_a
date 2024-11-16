@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../Style/style.css">
+    <script src="../scripts/script1.js"></script>
+    <script src="../scripts/script2.js"></script>
+    <title>Лабораторная работа № 2</title>
+</head>
+<body>
+    <div>
+        <button onclick="window.location.href='/pages/index.html'">назад</button>
+        <p>Лабораторная работа № 2</p>
+    </div>
+    <div> 
+        <div class="frame">
+            <h3>Задание № 1</h3>
+            <div class="frame">
+              <div>
+              <label>Введите первое число</label>
+              <input type="text" id="num1">
+              </div>
+              <div>
+                <label>Введите второе число</label>
+                <input type="text" id="num2">
+              </div>
+            </div>
+            <div id="calc1">
+                <button onclick="calculateOperations()">Вычислить:</button>
+                <div id="result1_sum_abs">Сумма модулей:</div>
+                <div id="result1_difference_abs">Разность модулей:</div>
+                <div id="result1_product_abs">Произведение модулей:</div>
+                <div id="result1_quotient_abs">Частное модулей:</div>
+            </div>
+        </div>
+        <div class="frame">
+            <h3>Задание № 2</h3>
+            <div class="frame">
+              <label>Введите 3-x значное число:</label>
+              <input type="text" id="num3">
+            </div>
+            <div id="calc2">
+                <button onclick="calculateSumAndProductOfDigits()">Вычислить:</button>
+                <div id="result2_sum">Сумма цифр:</div>
+                <div id="result2_product">Произведение цифр:</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
